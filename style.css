@@ -1,0 +1,237 @@
+/* Task 1 */
+h3 {
+    margin: auto;
+}
+
+#change__color {
+    .mode-container {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        width: 70vw;
+        height: 70vh;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+
+    .mode-container.dark-mode {
+        background-color: #121212;
+        color: white;
+    }
+
+    .mode-container.light-mode {
+        background-color: white;
+        color: black;
+    }
+
+    button {
+        width: 20%;
+        padding: 10px;
+        border: 1px solid;
+        background-color: transparent;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .mode-container.dark-mode button {
+        color: white;
+        border: 1px solid white;
+    }
+
+    .mode-container.light-mode button {
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+
+
+/*Task 2 */
+#math {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+
+    button {
+        border: 1px solid aqua;
+        background-color: transparent;
+        border-radius: 5px;
+        color: aqua;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    #randomNumber {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    button:hover {
+        background-color: aqua;
+        color: black;
+    }
+
+}
+
+/*Task 3*/
+#time {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    #fluid__container {
+        text-align: center;
+    }
+
+    button {
+        border: 1px solid rgb(255, 196, 0);
+        border-radius: 5px;
+        background-color: transparent;
+        color: rgb(255, 196, 0);
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    button:hover {
+        background-color: rgb(255, 196, 0);
+        color: black;
+    }
+
+    #timeDisplay {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    #timeOnly {
+        font-style: italic;
+        color: red;
+    }
+}
+
+
+/*Task 4*/
+#password {
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #fff;
+        width: 300px;
+    }
+
+    .criteria {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+        border-color: #ddd;
+    }
+
+    input.invalid {
+        border-color: red;
+    }
+
+
+    input.valid {
+        border-color: green;
+    }
+
+    #validationMessage {
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #555;
+        text-align: center;
+    }
+}
+
+/*Task 5*/
+#accordion {
+    .toggle-btn {
+        border: 2px solid green;
+        background-color: rgb(255, 255, 255);
+        color: green;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .toggle-btn:hover {
+        color: white;
+        background-color: darkgreen;
+    }
+
+
+    .content {
+        border: 2px solid black;
+        overflow: hidden;
+        height: 180px;
+        width: 60%;
+        margin: 0 auto;
+        transition: height 0.5s ease;
+        padding: 20px;
+        border-radius: 7px;
+        text-align: center;
+    }
+
+    .content.hidden {
+        height: 0;
+        padding: 0 10px;
+    }
+}

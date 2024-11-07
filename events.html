@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Events</title>
+</head>
+
+<body>
+    <section id="change__color">
+        <!-- task 1 -->
+        <h3>Task 1: change mode</h3>
+        <div class="container">
+            <div class="mode-container" id="modeContainer">
+                <button id="modeButton" class="btn" onclick="toggleMode()">change to dark mode</button>
+            </div>
+        </div>
+
+        <hr>
+    </section>
+
+
+    <section id="math">
+        <!-- task 2 -->
+        <h3>Task 2: generate random number 1-1000 (math random)</h3>
+        <button id="generateBtn">generate random numbers</button>
+        <div id="randomNumber">...</div>
+    </section>
+
+    <section id="time">
+        <!-- task 3 -->
+        <h3>Task 3: get current time (data object)</h3>
+        <button id="generateBtnTime">Generate Current Time</button>
+        <div id="timeDisplay">
+            <span id="timeOnly">...</span>
+        </div>
+    </section>
+
+    <section id="password">
+        <!-- task 4 -->
+        <h3>Task 4: password validator (regex)</h3>
+        <div class="password__container">
+            <div class="criteria">
+                <span>min 1 lower case,</span>
+                <span>1 UPPER CASE,</span>
+                <span>1 digit,</span>
+                <span>min 5 characters</span>
+            </div>
+
+
+            <input type="text" id="password" placeholder="password">
+            <p id="validationMessage"></p>
+        </div>
+    </section>
+
+    <section id="accordion">
+
+        <!-- task 5 -->
+        <h3>Task 5: toggle text (show/hide-classList)</h3>
+        <button class="toggle-btn">hide text</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus magni perspiciatis doloribus
+                aliquam
+                nulla totam qui architecto, quo exercitationem sit minus, ad maxime quas laudantium sequi magnam at odio
+                veniam quaerat placeat? Provident eum, quos consequuntur aspernatur sunt soluta cum modi minus dolorem
+                reiciendis sequi aperiam tenetur nulla, autem, suscipit ab fugit. Vero voluptatibus, iusto tempore eius
+                perspiciatis magni incidunt explicabo quibusdam voluptas quo est dicta reprehenderit sunt porro sed
+                dolores
+                exercitationem, in reiciendis vitae fugiat veritatis culpa!</p>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./events.js"></script>
+</body>
+
+</html>
